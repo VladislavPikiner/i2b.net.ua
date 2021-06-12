@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    height: 200px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    &__logo-img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+.navbar,
+.navbar-toggler,
+.navbar-toggler-icon {
+    z-index: 2;
+}
+
+.navbar-toggler {
+    display: block;
+    min-width: 60px;
+    min-height: 60px;
+    padding: .25rem .25rem;
+}
+
+.navbar-toggler-icon {
+    width: 40px;
+    height: 5px;
+    background-color: #596f8e;
+    border-radius: 5px;
+    position: relative;
+}
+
+.navbar-toggler-icon::after,
+.navbar-toggler-icon::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: #596f8e;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon::after {
+    right: 0;
+    left: 0;
+    top: 15px;
+}
+
+.navbar-toggler-icon::before {
+    right: 0;
+    left: 0;
+    bottom: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 22px;
+    text-shadow: 0 0 2px #000;
+}
+
+.content-top {
+    height: 95vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    margin-top: -490px;
+    &__title {
+        margin-top: 32rem;
+        font-family: 'Yeseva One', cursive;
+        font-size: 56px;
+        color: #fff;
+    }
+    &__title2 {
+        font-size: 27px;
+        color: #fff;
+        margin-top: 3rem !important;
+    }
+    &-wrapper {
+        height: 95vh;
+        padding-top: 10px;
+    }
+}
+
+.fa-comment-dots {
+    font-size: 24px;
+}
+
+
+/* NEON-BUTTON */
+
+.neon-title {
+    display: block;
+    position: relative;
+    width: 450px;
+    height: 65px;
+    z-index: 200;
+    outline: none;
+    margin: 3rem auto 0 auto;
+}
+
+.neon-btn {
+    font-family: 'Neucha', cursive;
+    position: absolute;
+    display: block;
+    border-radius: 8px;
+    padding: 18px 29px;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 32px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-shadow: 0 0 5px rgba(255, 246, 246, .7);
+    background-size: 500% auto;
+    box-shadow: 0 0 40px rgb(33, 150, 243), 0 0 80px #2196f3;
+    background-color: #2195f3a2;
+    animation: neon 5s infinite ease;
+}
+
+@keyframes neon {
+    0% {
+        background-image: linear-gradient(to right, #c2e9fb 0%, transparent 51%, #c2e9fb 100%);
+    }
+    50% {
+        background-position: right center;
+    }
+    100% {
+        background-image: linear-gradient(to right, #c2e9fb 0%, transparent 51%, #c2e9fb 100%);
+    }
+}
+
+.neon-title.active {
+    top: -150%;
+}
+
+.neon-btn__line {
+    position: absolute;
+    display: block;
+}
+
+.neon-btn__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.neon-btn:hover .neon-btn__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+}
+
+.neon-btn__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.neon-btn:hover .neon-btn__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+}
+
+.neon-btn__line--left {
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(0deg, transparent, #2196f3);
+}
+
+.neon-btn:hover .neon-btn__line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.neon-btn__line--right {
+    right: 0;
+    top: -100%;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.neon-btn:hover .neon-btn__line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.neon-btn:hover {
+    box-shadow: 0 0 40px rgb(33, 150, 243), 0 0 80px #2196f3;
+    background-color: #2195f3a2;
+    color: #333;
+    transition: .5s;
+    transition-delay: .75s;
+    border-radius: 8px;
+}
+
+
+/* NEON-BUTTON */
+
+#news {
+    margin-top: 3rem;
+}
+
+.slider-control {
+    display: block;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 45px !important;
+    transform: translateY(-215px);
+}
+
+.carousel-control-next {
+    &-icon {
+        background-image: url('../images/next-icn.svg') !important;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.carousel-control-prev {
+    &-icon {
+        background-image: url('../images/prev-icn.svg') !important;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+#advantages {
+    background-color: #596f8e;
+}
+
+.fa-user-shield,
+.fa-award,
+.fa-handshake {
+    font-size: 200px;
+    color: #DAA520;
+    text-shadow: 0 0 5px #000;
+}
+
+.advantages__img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.advantages__title {
+    text-transform: uppercase;
+    font-family: 'Stalinist One', cursive;
+}
+
+.advantages__discr {
+    font-family: 'Comfortaa', cursive;
+}
+
+.advantages__title,
+.advantages__discr {
+    text-align: center;
+}
+
+.g-form__input {
+    padding: 5px 130px 5px 20px;
+    text-align: start;
+}
+
+#footer {
+    background-color: #596f8e;
+    margin-bottom: 0;
+}
+
+.fa-facebook-f,
+.fa-whatsapp,
+.fa-phone {
+    font-size: 120px;
+    text-shadow: 0 0 5px #000;
+}
+
+.fa-facebook-f {
+    color: #3b5998
+}
+
+.fa-whatsapp {
+    color: #43d854
+}
+
+.fa-phone {
+    color: #fff
+}
+
+@media (max-width: 1380px) {
+    .carousel-control-next,
+    .carousel-control-prev {
+        transform: translateY(-415px);
+    }
+}
+
+@media (max-width: 990px) {
+    .content-top__title {
+        margin-top: 30rem !important;
+    }
+    .navbar-nav {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+@media (max-width: 770px) {
+    .content-top__title2 {
+        margin-top: 1rem !important;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        transform: translateY(-405px);
+    }
+}
+
+@media (max-width: 540px) {
+    .advantages__title {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 460px) {
+    .header__logo-img {
+        width: 75px;
+        height: 75px;
+    }
+    .content-top__title {
+        font-size: 44px;
+    }
+    .content-top__title2 {
+        font-size: 18px;
+    }
+    .neon-btn {
+        font-size: 24px;
+        padding: 10px 10px;
+    }
+    .neon-title {
+        width: 300px !important;
+    }
+    #news {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .g-form__input {
+        padding: 5px 60px 5px 20px;
+    }
+    .fa-facebook-f,
+    .fa-whatsapp,
+    .fa-phone {
+        font-size: 75px !important;
+    }
+    .content-top__title {
+        margin-top: 26rem !important;
+    }
+    .advantages__title {
+        font-size: 16px !important;
+    }
+}

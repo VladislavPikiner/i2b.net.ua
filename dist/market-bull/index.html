@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Market Bull</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+
+
+
+                <nav class="navbar navbar-expand-lg menu">
+                    <div class="container-fluid">
+                        <a class="navbar-brand logo" href="#"> <img class="logo-img" src="images/logo.png" alt="logo"> </a>
+
+
+                        <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon burger__span"></span>
+                        </button>
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav navbar-expand-lg menu__list">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link title dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About us
+                </a>
+                                    <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item active" href="#">About marketbull</a></li>
+                                        <li><a class="dropdown-item" href="#">Favorable condition for traders</a></li>
+                                        <li><a class="dropdown-item" href="#">Marketbull values</a></li>
+                                        <li><a class="dropdown-item" href="#">Our services</a></li>
+                                        <li><a class="dropdown-item" href="#">Investment and security</a></li>
+                                        <li><a class="dropdown-item" href="#">Efficiency</a></li>
+                                        <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link title dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Forex trading
+                </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link title dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Platforms
+                </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link title" href="#">Withdrawal</a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link title" href="#">Deposit</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link title dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EN
+                </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">RU</a></li>
+                                        <li><a class="dropdown-item" href="#">DE</a></li>
+                                        <li><a class="dropdown-item" href="#">ES</a></li>
+                                        <li><a class="dropdown-item" href="#">PL</a></li>
+                                        <li><a class="dropdown-item" href="#">AR</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+
+                            <div class="kabinet">
+                                <button type="button" class="btn btn-lg btn-primary me-3 mt-2" data-bs-toggle="modal" data-bs-target="#SignUp">Sign Up</button>
+                                <div class="modal fade" id="SignUp" tabindex="-1" aria-labelledby="SignUp" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title title" id="regModalLabel">Registration form</h5>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="InputRegEmail1" class="form-label title">Email address</label>
+                                                        <input type="email" class="form-control" id="InputRegEmail1" aria-describedby="emailHelp">
+                                                        <div id="emailHelp" class="form-text">*We'll never share your email with anyone else.</div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="InputRegPassword1" class="form-label title">Password</label>
+                                                        <input type="password" class="form-control" id="InputRegPassword1">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="InputRegPassword2" class="form-label title">Password again</label>
+                                                        <input type="password" class="form-control" id="InputRegPassword2">
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input" id="subscribeCheck">
+                                                        <label class="form-check-label" for="subscribeCheck">Subscribe to our newsletter</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">Sign Up</button>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-lg btn-success me-3 mt-2" data-bs-toggle="modal" data-bs-target="#SignIn">Sign In</button>
+                                <div class="modal fade" id="SignIn" tabindex="-1" aria-labelledby="SignIn" aria-hidden="true" data-bs-backdrop="static">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title title" id="signModalLabel">Authorization</h5>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="exampleInputEmail1" class="form-label title">Email address</label>
+                                                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="InputPassword" class="form-label title">Password</label>
+                                                        <input type="password" class="form-control" id="InputPassword">
+                                                    </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input" id="rememberCheck">
+                                                        <label class="form-check-label" for="rememberCheck">Remember me</label>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success">Sign In</button>
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </nav>
+
+
+
+
+
+            </div>
+        </div>
+    </header>
+
+    <section class="header-slider">
+        <div id="slider-top" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="images/header-bg-1.jpg" alt="" class="carousel-item-img d-block w-100"></div>
+                <div class="carousel-item"><img src="images/header-bg-2.jpg" alt="" class="carousel-item-img d-block w-100"></div>
+                <div class="carousel-item"><img src="images/header-bg-3.png" alt="" class="carousel-item-img d-block w-100"></div>
+            </div>
+        </div>
+        <div class="content-top__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <h1 class="content-top__title title mb-5" data-aos="fade-right">Buy and sell with Marketbull</h1>
+                        <h2 class="title content-top__title2 mb-5" data-aos="fade-right">Cryptocurrency, Stocks, Commodities, Forex, Futures</h2>
+                        <button type="button" class="btn btn-lg btn-primary content-top-btn" data-aos="fade-right">Start trading</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                    {
+                        "symbols": [{
+                            "proName": "FOREXCOM:SPXUSD",
+                            "title": "S&P 500"
+                        }, {
+                            "proName": "FOREXCOM:NSXUSD",
+                            "title": "NASDAQ 100"
+                        }, {
+                            "proName": "FX_IDC:EURUSD",
+                            "title": "EUR/USD"
+                        }, {
+                            "proName": "BITSTAMP:BTCUSD",
+                            "title": "BTC/USD"
+                        }, {
+                            "proName": "BITSTAMP:ETHUSD",
+                            "title": "ETH/USD"
+                        }],
+                        "showSymbolLogo": true,
+                        "colorTheme": "dark",
+                        "isTransparent": false,
+                        "displayMode": "adaptive",
+                        "locale": "ru"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </section>
+
+
+    <section id="advantages">
+        <div class="container">
+
+            <div class="row">
+                <h2 class="advantages__title title" data-aos="fade-down">Professional traders trust us. Why?</h2>
+                <p class="advantages__text mt-5 title" data-aos="fade-down">Marketbull advantages:</p>
+
+
+                <div class="row advantages__item-wrapper">
+                    <div class="advantages__items mt-5 col-9" data-aos="fade-down">
+                        <div class="row">
+
+
+                            <div class="col-3 mx-2 my-2 py-2 advantages__item">
+                                <p class="advantages__item-text pb-2">Depositing funds will take a few minutes</p>
+                            </div>
+
+                            <div class="col-3 mx-2 my-2 py-2 advantages__item">
+                                <p class="advantages__item-text pb-2">We guarantee safe storage of funds</p>
+                            </div>
+
+                            <div class="col-3 mx-2 my-2 py-2 advantages__item">
+                                <p class="advantages__item-text pb-2">More than 300 tools in your arsenal</p>
+                            </div>
+
+                            <div class="col-3 mx-2 my-2 py-2 advantages__item">
+                                <p class="advantages__item-text pb-2">The system is licensed, it can be regulated</p>
+                            </div>
+
+
+                            <div class="col-3 mx-2 my-2 py-2 advantages__item">
+                                <p class="advantages__item-text pb-2">Analysts can always help</p>
+                            </div>
+
+                            <div class="col-3 mx-2 my-2 py-2 advantages__item">
+                                <p class="advantages__item-text pb-2">We offer promotions, contests and free deposits</p>
+                            </div>
+
+
+
+                        </div>
+
+                        <button type="button" class="btn btn-lg btn-primary mt-5 mb-5" data-aos="zoom-in">Start trading</button>
+                    </div>
+                </div>
+
+                <div class="advantages__img"><img src="images/office.png" alt="" class="advantages__img-office"></div>
+
+
+                <div class="advantages__questions">
+                    <div class="container">
+                        <div class="row advantages__questions-wrapper mx-auto">
+
+                            <div class="col-10 advantages__questions-border py-5">
+                                <h2 class="advantages__questions-title text-center title">Do you want to start your way in trading? </h2>
+                                <h2 class="advantages__questions-answer text-center title">Do it now! </h2>
+                                <p class="advantages__questions-provide text-center title">We provide:</p>
+                                <div class="row">
+
+                                    <div class="col text-center" data-aos="fade-down">
+                                        <div class="check-img mx-auto my-2"><i class="far fa-check-circle"></i></div>
+                                        <div class="provide-text">articles, tutorials and useful materials for you</div>
+                                    </div>
+
+                                    <div class="col text-center" data-aos="fade-down">
+                                        <div class="check-img mx-auto my-2"><i class="far fa-check-circle"></i></div>
+                                        <div class="provide-text">help and support in 16 languages</div>
+                                    </div>
+
+                                    <div class="col text-center" data-aos="fade-down">
+                                        <div class="check-img mx-auto my-2"><i class="far fa-check-circle"></i></div>
+                                        <div class="provide-text">personal assistant who will help you with analytics and trading</div>
+                                    </div>
+
+                                    <div class="col text-center" data-aos="fade-down">
+                                        <div class="check-img mx-auto my-2"><i class="far fa-check-circle"></i></div>
+                                        <div class="provide-text">free trial account of $ 10,000!</div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="platforms">
+        <div class="container text-center">
+            <div class="row text-center" data-aos="zoom-in">
+                <img src="images/platforms.png" alt="" class="platforms-img w-50 mx-auto">
+            </div>
+
+            <h2 class="platforms__title title text-center mt-5" data-aos="zoom-in-up">Trade on 3 world class platforms</h2>
+
+            <h5 class="platforms__title-name title mt-5" data-aos="fade-down">MT4</h5>
+            <p class="platforms__title-discr" data-aos="fade-down">The most popular trading platform in the world </p>
+
+            <h5 class="platforms__title-name title mt-5" data-aos="fade-down">Web Trader STATUS </h5>
+            <p class="platforms__title-discr" data-aos="fade-down">Intuitive and powerful, anywhere, anytime!</p>
+
+            <h5 class="platforms__title-name title mt-5" data-aos="fade-down">Mobile Trader</h5>
+            <p class="platforms__title-discr" data-aos="fade-down">Wherever you are, you can trade with us</p>
+
+
+        </div>
+    </section>
+
+
+    <section class="advantages-2">
+        <div class="container">
+
+            <h2 class="advantages-2__title text-center title mb-5" data-aos="fade-down">Trade on the FOREX market with us:</h2>
+
+            <div class="row mb-4">
+
+                <div class="col advantages-2__item mx-3 mb-2" data-aos="fade-down">
+                    <p class="advantages-2__text">We provide modern tools</p>
+                </div>
+
+                <div class="col advantages-2__item mx-3 mb-2" data-aos="fade-down">
+                    <p class="advantages-2__text">We will secure against risks</p>
+                </div>
+
+                <div class="col advantages-2__item mx-3 mb-2" data-aos="fade-down">
+                    <p class="advantages-2__text">Tight spreads from 0 pips</p>
+                </div>
+
+                <div class="col advantages-2__item mx-3 mb-2" data-aos="fade-down">
+                    <p class="advantages-2__text">Up to 1: 1000 leverage</p>
+                </div>
+
+                <div class="col advantages-2__item mx-3 mb-2 text-center" data-aos="fade-down">
+                    <p class="advantages-2__text">We guarantee the execution of the transaction</p>
+                </div>
+
+            </div>
+
+            <div class="row pb-5">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-lg btn-primary" data-aos="zoom-in">Start trading</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="start">
+
+        <div class="container text-center">
+            <h3 class="start__pretitle" data-aos="fade-down">Start trading with Marketbull</h3>
+            <h2 class="start__title title" data-aos="fade-down">Quick account opening in 3 easy steps</h2>
+
+            <div class="row">
+
+                <div class="col text-center">
+                    <p class="start__item-num title mx-4" data-aos="fade-down">1</p>
+                    <h5 class="start__item-title title" data-aos="fade-down">Register</h5>
+                    <p class="start__item-text px-5" data-aos="fade-down">Select your account type and fill out our fast and secure application form</p>
+                </div>
+
+                <div class="col text-center">
+                    <p class="start__item-num title mx-4" data-aos="fade-down">2</p>
+                    <h5 class="start__item-title title" data-aos="fade-down">Top up your account</h5>
+                    <p class="start__item-text px-5" data-aos="fade-down">Fund your trading account using a wide range of financing methods</p>
+                </div>
+
+                <div class="col text-center">
+                    <p class="start__item-num title mx-4" data-aos="fade-down">3</p>
+                    <h5 class="start__item-title title" data-aos="fade-down">Trade</h5>
+                    <p class="start__item-text px-5" data-aos="fade-down">Start trading your live account and access over 10,000 instruments on our trading platforms</p>
+                </div>
+
+            </div>
+
+            <div class="col text-center mt-4">
+                <button type="button" class="btn btn-lg btn-primary" data-aos="zoom-in-out">Invest</button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="accounts">
+
+        <h2 class="accounts__title title text-center mb-5">Marketbull account types</h2>
+
+        <div class="container">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist" data-aos="fade-down">
+                <li class="nav-item accounts__nav-item" role="presentation">
+                    <button class="nav-link accounts__nav-link title active" id="standart-tab" data-bs-toggle="tab" data-bs-target="#standart" type="button" role="tab" aria-controls="standart" aria-selected="true">Standart</button>
+                </li>
+                <li class="nav-item accounts__nav-item" role="presentation">
+                    <button class="nav-link accounts__nav-link title" id="gold-tab" data-bs-toggle="tab" data-bs-target="#gold" type="button" role="tab" aria-controls="gold" aria-selected="false">Gold</button>
+                </li>
+                <li class="nav-item accounts__nav-item" role="presentation">
+                    <button class="nav-link accounts__nav-link title" id="premium-tab" data-bs-toggle="tab" data-bs-target="#premium" type="button" role="tab" aria-controls="premium" aria-selected="false">Premium</button>
+                </li>
+                <li class="nav-item accounts__nav-item" role="presentation">
+                    <button class="nav-link accounts__nav-link title" id="platinum-tab" data-bs-toggle="tab" data-bs-target="#platinum" type="button" role="tab" aria-controls="platinum" aria-selected="false">Platinum</button>
+                </li>
+                <li class="nav-item accounts__nav-item" role="presentation">
+                    <button class="nav-link accounts__nav-link title" id="vip-tab" data-bs-toggle="tab" data-bs-target="#vip" type="button" role="tab" aria-controls="vip" aria-selected="false">VIP</button>
+                </li>
+                <li class="nav-item accounts__nav-item" role="presentation">
+                    <button class="nav-link accounts__nav-link title" id="elite-tab" data-bs-toggle="tab" data-bs-target="#elite" type="button" role="tab" aria-controls="elite" aria-selected="false">Elite</button>
+                </li>
+            </ul>
+
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="standart" role="tabpanel" aria-labelledby="standart-tab">
+                    <div class="row">
+                        <div class="col-7 my-auto" data-aos="fade-right">
+                            <img src="images/accounts.png" alt="account-img" class="account-img w-100">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="accounts__title title mt-5" data-aos="fade-down">Standart</h2>
+                            <h5 class="accounts__deposit title my-3" data-aos="fade-down">Minimum deposit: $100.000</h5>
+                            <p class="accounts__info" data-aos="fade-down">Min. Spreads from 1.8 </p>
+                            <p class="accounts__info" data-aos="fade-down">Max. Leverage 1: 1000</p>
+                            <p class="accounts__info" data-aos="fade-down">Bonus up to 50% </p>
+                            <p class="accounts__info" data-aos="fade-down">Customer service 5/7</p>
+                            <p class="accounts__info" data-aos="fade-down">Personal account manager </p>
+                            <button type="button" class="btn btn-lg btn-primary mt-5" data-aos="zoom-in">Start trading</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="gold" role="tabpanel" aria-labelledby="gold-tab">
+                    <div class="row">
+                        <div class="col-7 my-auto">
+                            <img src="images/accounts.png" alt="account-img" class="account-img w-100">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="accounts__title title mt-5">Standart</h2>
+                            <h5 class="accounts__deposit title my-3">Minimum deposit: $100.000</h5>
+                            <p class="accounts__info">Min. Spreads from 1.8 </p>
+                            <p class="accounts__info">Max. Leverage 1: 1000</p>
+                            <p class="accounts__info">Bonus up to 50% </p>
+                            <p class="accounts__info">Customer service 5/7</p>
+                            <p class="accounts__info">Personal account manager </p>
+                            <button type="button" class="btn btn-lg btn-primary mt-5">Start trading</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">
+                    <div class="row">
+                        <div class="col-7 my-auto">
+                            <img src="images/accounts.png" alt="account-img" class="account-img w-100">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="accounts__title title mt-5">Standart</h2>
+                            <h5 class="accounts__deposit title my-3">Minimum deposit: $100.000</h5>
+                            <p class="accounts__info">Min. Spreads from 1.8 </p>
+                            <p class="accounts__info">Max. Leverage 1: 1000</p>
+                            <p class="accounts__info">Bonus up to 50% </p>
+                            <p class="accounts__info">Customer service 5/7</p>
+                            <p class="accounts__info">Personal account manager </p>
+                            <p class="accounts__info"></p>
+                            <button type="button" class="btn btn-lg btn-primary mt-5">Start trading</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="platinum" role="tabpanel" aria-labelledby="platinum-tab">
+                    <div class="row">
+                        <div class="col-7 my-auto">
+                            <img src="images/accounts.png" alt="account-img" class="account-img w-100">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="accounts__title title mt-5">Standart</h2>
+                            <h5 class="accounts__deposit title my-3">Minimum deposit: $100.000</h5>
+                            <p class="accounts__info">Min. Spreads from 1.8 </p>
+                            <p class="accounts__info">Max. Leverage 1: 1000</p>
+                            <p class="accounts__info">Bonus up to 50% </p>
+                            <p class="accounts__info">Customer service 5/7</p>
+                            <p class="accounts__info">Personal account manager </p>
+                            <p class="accounts__info"></p>
+                            <button type="button" class="btn btn-lg btn-primary mt-5">Start trading</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="vip" role="tabpanel" aria-labelledby="vip-tab">
+                    <div class="row">
+                        <div class="col-7 my-auto">
+                            <img src="images/accounts.png" alt="account-img" class="account-img w-100">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="accounts__title title mt-5">Standart</h2>
+                            <h5 class="accounts__deposit title my-3">Minimum deposit: $100.000</h5>
+                            <p class="accounts__info">Min. Spreads from 1.8 </p>
+                            <p class="accounts__info">Max. Leverage 1: 1000</p>
+                            <p class="accounts__info">Bonus up to 50% </p>
+                            <p class="accounts__info">Customer service 5/7</p>
+                            <p class="accounts__info">Personal account manager </p>
+                            <p class="accounts__info"></p>
+                            <button type="button" class="btn btn-lg btn-primary mt-5">Start trading</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="elite" role="tabpanel" aria-labelledby="elite-tab">
+                    <div class="row">
+                        <div class="col-7 my-auto">
+                            <img src="images/accounts.png" alt="account-img" class="account-img w-100">
+                        </div>
+                        <div class="col-5">
+                            <h2 class="accounts__title title mt-5">Standart</h2>
+                            <h5 class="accounts__deposit title my-3">Minimum deposit: $100.000</h5>
+                            <p class="accounts__info">Min. Spreads from 1.8 </p>
+                            <p class="accounts__info">Max. Leverage 1: 1000</p>
+                            <p class="accounts__info">Bonus up to 50% </p>
+                            <p class="accounts__info">Customer service 5/7</p>
+                            <p class="accounts__info">Personal account manager </p>
+                            <p class="accounts__info"></p>
+                            <button type="button" class="btn btn-lg btn-primary mt-5">Start trading</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="adv-line">
+        <div class="container">
+            <div class="row">
+                <div class="adv-line__item col-4 my-auto">
+                    <h2 class="adv-line__title title mb-5">Start your Forex trading journey with us now!</h2>
+                    <button type="button" class="btn btn-lg btn-primary" data-aos="zoom-in">Start trading</button>
+                </div>
+
+                <div class="adv-line__item col-6" data-aos="fade-down">
+
+                    <img class="adv-line__img" src="https://www.fpmarkets.com/wp-content/themes/FPMarkets/image-2020/what-is-algorithmic-trading-forex/fpm-iphone.png" alt="adv">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards my-5">
+        <div class="container">
+            <div class="row mx-auto">
+
+                <div class="cards__wrapper mx-auto text-center" data-aos="fade-down">
+
+                    <img src="images/card.png" alt="" class="cards__img cards__img-left">
+                    <img src="images/card.png" alt="" class="cards__img cards__img-center">
+                    <img src="images/card.png" alt="" class="cards__img cards__img-right">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col footer__logo"><img src="images/logo.png" alt="LOGO footer" class="footer__logo-img"></div>
+
+                <div class="col about-us me-2">
+                    <div class="dropdown w-100">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           
+                            <h5 class="footer__title title mb-3">about us</h5>
+                        </button>
+                        <ul class="footer__list dropdown-menu ps-0" aria-labelledby="dropdownMenuButton1">
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">About Marketbull</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Favorable conditions for traders</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Marketbull values</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Our services</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Investment and security</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Efficiency</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col footer-forex me-2">
+
+                    <div class="dropdown w-100">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <h5 class="footer__title title mb-3">forex trading</h5>
+                                                  
+                        </button>
+
+                        <ul class="footer__list dropdown-menu ps-0" aria-labelledby="dropdownMenuButton2">
+
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Market forecast from specialists</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Legal regulation and transparency</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Account types</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="col footer-platforms me-2">
+
+                    <div class="dropdown w-100">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                            
+                            <h5 class="footer__title title mb-3">platforms</h5>
+                                                  
+                        </button>
+
+                        <ul class="footer__list dropdown-menu ps-0" aria-labelledby="dropdownMenuButton3">
+
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Metatrader4</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Web Trader</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Status Trader </a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Apple Metatrader4</a>
+                            </li>
+                            <li class="footer__list-item dropdown-item">
+                                <a href="#" class="footer__list-link">Android Metatrader4</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/869451fb83.js " crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
